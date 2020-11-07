@@ -1,0 +1,26 @@
+@urlBase = http://localhost:4000
+
+GET {{urlBase}}/todos
+
+###
+GET {{urlBase}}/todos/5fa720344310d5092c9667a8
+
+###
+POST {{urlBase}}/todos
+Content-Type: application/json
+
+{
+    "todo": "Tarea Api",
+    "done": false
+}
+
+###
+PUT  {{urlBase}}/todos/5fa720344310d5092c9667a8
+Content-Type: application/json
+
+{
+    "todo": "Tarea Api Hecha",
+    "done": true
+}
+###
+DELETE  {{urlBase}}/todos/5fa71fc9394b6039ecbc1340
